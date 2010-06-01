@@ -1,0 +1,107 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div.page-outer {
+	display: table;
+	height: 100%;
+	width: 100%;
+	margin: 0 0 -52px 0;
+	padding: 0;
+}
+
+div.page-inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div.content {
+	display: table;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#clock {
+	float: left;
+	width: 265px;
+	height: 265px;
+}
+
+div.text {
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'DejaVuSerifBook', DejaVu, serif;
+	padding: 0 0 0 70px;
+	color: #2e3436;
+	clear: right;
+	text-shadow: #babdb6 2px 2px 1px;
+}
+
+span.first-text,
+span.second-text {
+	display: block;
+}
+
+span.first-text {
+	font-size: 40pt; 
+}
+
+span.second-text {
+	margin: 10px 0 0 0;
+	font-size: 29pt; 
+}
+
+a:hover,
+a:active,
+a:visited,
+a {
+	color: #0000ee;
+	text-decoration: underline;
+}
+
+span.second-text a:hover,
+span.second-text a:active,
+span.second-text a:visited,
+span.second-text a {
+	/* color: #183765; */
+	text-shadow: #b7cee7 2px 2px 2px;
+	background: transparent url('../images/cursor.png') bottom right no-repeat;
+	padding: 0 34px 0 0;
+}
+
+div.footer {
+	font-family: DejaVu, serif;
+	color: #555753;
+	display: block;
+	clear: both;
+	height: 20px;
+	text-align: center;
+	margin: 16px 0;
+}
+
+div.footer a,
+div.footer a:visited {
+	color: #555753;
+}
+
+div.footer a:hover,
+div.footer a:active {
+	color: #0000ee;
+}
+
+.footerfix {
+	display: block;
+	height: 52px;
+}
+
+.clearfix {
+	clear: both;
+}

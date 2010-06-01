@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+	style="height: 100%;"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xml:lang="en"
+	lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="/favicon.png" type="image/png" />
+	<link rel="Stylesheet" type="text/css" href="styles/DejaVuSerif-webfont.css" media="screen" />
+	<link rel="Stylesheet" type="text/css" href="styles/screen.css" media="screen" />
+	<title>ineedmoretime.com - A HTML5 analog clock experiment</title>
+</head>
+<body>
+	<div class="page-outer">
+		<div class="page-inner">
+			<div class="content">
+				<div id="clock"></div>
+				<div class="text">
+					<span class="first-text">I am not finished yet.</span>
+					<span class="second-text"><a class="timeshift" href="foo">I need more time</a></span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="footerfix"></div>		
+		</div>
+	</div>
+	<div class="footer">
+		Copyright 2010, &nbsp;Jakob Westhoff &nbsp;<a href="http://westhoffswelt.de">http://westhoffswelt.de</a>
+	</div>
+
+	<script type="text/javascript" src="js/lib/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/lib/raphael-min.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var clock = new Clock( "#clock" );
+			$( ".timeshift" ).click(function( e ) {
+				clock.moveBack( 1 );
+				e.preventDefault();
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
