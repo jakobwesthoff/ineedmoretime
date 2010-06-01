@@ -9,7 +9,7 @@ div.page-outer {
 	display: table;
 	height: 100%;
 	width: 100%;
-	margin: 0 0 -52px 0;
+	margin: 0 0 -75px 0;
 	padding: 0;
 }
 
@@ -87,6 +87,15 @@ div.footer {
 	margin: 16px 0;
 }
 
+span.copyright,
+span.repository {
+	display: block;
+}
+
+span.repository {
+	margin: 4px 0 0 0;
+}
+
 div.footer a,
 div.footer a:visited {
 	color: #555753;
@@ -99,7 +108,7 @@ div.footer a:active {
 
 .footerfix {
 	display: block;
-	height: 52px;
+	height: 75px;
 }
 
 .clearfix {
